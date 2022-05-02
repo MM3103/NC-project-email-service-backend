@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  email-service:
+    image: mm98/email-service-app:1.0
+    ports:
+      - 8485:8485
+    networks:
+      - my-net
+networks:
+  my-net:
+    driver: bridge
